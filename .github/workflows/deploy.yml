@@ -22,8 +22,8 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Run the bot
+    - name: Deploy to server
       env:
         TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
       run: |
-        python bot.py
+        echo "Deploying bot...
